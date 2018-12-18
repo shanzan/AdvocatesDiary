@@ -1,0 +1,250 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/image"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="app.diary.advocates.advocatesdiary.AddnewCase">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#80ffffff"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="Add A New Case"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/refresh"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/add_case_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Case Number"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_add_circle"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/add_case_type"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:entries="@array/case_type"
+                android:prompt="@string/case_prompt"/>
+
+            <EditText
+                android:id="@+id/add_case_co_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complainant Name"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_add_circle"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <EditText
+                android:id="@+id/add_case_co_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complainant Address"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_add_circle"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <EditText
+                android:id="@+id/add_case_co_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complainant Phone"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_add_circle"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <EditText
+                android:id="@+id/add_case_op_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Opponent Name"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_add_circle"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <EditText
+                android:id="@+id/add_case_op_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Opponent Address"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_add_circle"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <EditText
+                android:id="@+id/add_case_op_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Opponent Phone"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_add_circle"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/case_select_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawablePadding="5dp"
+                android:padding="15dp"
+                android:text="Select Case Date"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/add_case_court_name"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:entries="@array/court_type"
+                android:prompt="@string/court_prompt"
+                />
+            <Spinner
+                android:id="@+id/add_case_court_type"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:entries="@array/case_stage"
+                android:prompt="@string/stage_prompt" />
+            <EditText
+                android:id="@+id/add_case_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Genre Number"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_add_circle"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <EditText
+                android:id="@+id/add_case_referedby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reffered By"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_add_circle"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <EditText
+                android:id="@+id/add_case_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Comment"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_add_circle"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <Button
+                android:id="@+id/add_case_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/buttondesign"
+                android:fontFamily="serif"
+                android:text="Add New Case"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

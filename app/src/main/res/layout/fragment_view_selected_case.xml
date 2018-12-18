@@ -1,0 +1,448 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:background="@drawable/image"
+    tools:context="app.diary.advocates.advocatesdiary.ViewSelectedCase">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center">
+
+
+        <TableLayout
+            android:background="#80FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:stretchColumns="*"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Update/delete Case"
+                android:textAlignment="center"
+                android:textColor="@color/refresh"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Case No:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/update_case_no"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01111000"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Case Type:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:layout_weight="2"
+                    android:id="@+id/updateCasetype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/case_type"
+                    android:prompt="@string/case_prompt"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="On Behalf:"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/update_complain_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:scrollbars="horizontal"
+                    android:text="Recently"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Opponent :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/update_opponent_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter Case Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Last Case Date:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lastcaseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter Case Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Next Case Date:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/upnextcasedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter Case Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Court Type :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:layout_weight="2"
+                    android:id="@+id/updateCourtType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/court_type"
+                    android:prompt="@string/case_prompt"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Case Stage:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:layout_weight="2"
+                    android:id="@+id/updateCourtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/case_stage"
+                    android:prompt="@string/stage_prompt"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Refered By:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/update_refered_by"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Genre :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/updatecourtGenre"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Comment :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/updateComment"
+                    android:layout_weight="2"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Party Phone :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/updateC_phone"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Party Address:"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/updateC_address"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Opp Phone :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/update_opponent_phone"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow
+                android:background="@drawable/borderdesign"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Opp Address :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/update_oppo_address"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+            <Button
+                android:id="@+id/update_case_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttondesign"
+                android:fontFamily="serif"
+                android:text="Update Case"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+            <Button
+                android:id="@+id/delete_case_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/buttondesign"
+                android:fontFamily="serif"
+                android:text="Delete Case"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+
+        </TableLayout>
+    </ScrollView>
+
+
+</FrameLayout>

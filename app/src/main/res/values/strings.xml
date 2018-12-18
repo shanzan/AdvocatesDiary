@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Advocates Diary</string>
+    <string name="splashtext">Advocates Diary</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="case_prompt">Choose a Case Type</string>
+    <string name="court_prompt">Choose a Court Name</string>
+    <string name="stage_prompt">Choose a Case Stage</string>
+
+    <string-array name="case_type">
+        <item>SESSION</item>
+        <item>STC</item>
+        <item>GR</item>
+        <item>CR</item>
+        <item>APPEAL</item>
+        <item>REVISION</item>
+        <item>MISC</item>
+        <item>FS</item>
+        <item>TX</item>
+        <item>NS</item>
+        <item>MS</item>
+        <item>OTHERS</item>
+    </string-array>
+
+
+    <string-array name="court_type">
+        <item>DJ</item>
+        <item>ADJI</item>
+        <item>ADJL</item>
+        <item>SPECIAL COURT</item>
+        <item>NS</item>
+        <item>JOINT COURT 1</item>
+        <item>JOINT COURT 2</item>
+        <item>JOINT COURT 3</item>
+        <item>CJK</item>
+        <item>ACJM</item>
+        <item>SJM 1</item>
+        <item>SJM 2</item>
+        <item>SJM 3</item>
+        <item>SJM 4</item>
+        <item>JM 1</item>
+        <item>JM 2</item>
+        <item>JM 3</item>
+        <item>JM 4</item>
+        <item>EXM</item>
+        <item>DM</item>
+        <item>SAJ</item>
+        <item>CMM</item>
+    </string-array>
+
+    <string-array name="case_stage">
+        <item>SR</item>
+        <item>WA</item>
+        <item>PH</item>
+        <item>PW</item>
+        <item>DW</item>
+        <item>CHARGE</item>
+        <item>APPEAL</item>
+        <item>ORDER</item>
+        <item>JUDGEMENT</item>
+        <item>HEARING</item>
+        <item>ATTENDANCE</item>
+        <item>BH</item>
+    </string-array>
+</resources>

@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/image"
+    tools:context="app.diary.advocates.advocatesdiary.ViewSubuser">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="All SUB USERS"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/refresh"
+        android:textSize="20sp"
+        android:background="#80ffffff"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listuserview"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"/>
+</FrameLayout>

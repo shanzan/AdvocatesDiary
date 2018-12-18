@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeRefresh"
+    tools:context="app.diary.advocates.advocatesdiary.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/diary">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/splashlinear"
+        android:paddingTop="250dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:focusable="auto"
+            android:fontFamily="cursive"
+            android:lineSpacingExtra="24sp"
+            android:text="@string/splashtext"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:focusable="auto"
+            android:fontFamily="cursive"
+            android:gravity="center_vertical|right"
+            android:text="A digital diary for advocates"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="visible" />
+    </LinearLayout>
+    </ScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

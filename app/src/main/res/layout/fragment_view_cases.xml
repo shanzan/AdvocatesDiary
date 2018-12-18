@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/image"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="app.diary.advocates.advocatesdiary.ViewCases">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="All Cases"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/refresh"
+            android:textSize="20sp"
+            android:background="#80ffffff"
+            android:textStyle="bold"
+            android:id="@+id/textView3" />
+
+        <SearchView
+            android:layout_marginTop="5dp"
+            android:id="@+id/searchCase"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView3"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search here"
+            android:background="#80FFFFFF"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listrecycleview"
+            android:scrollbars="vertical"
+            android:clipToPadding="false">
+
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</FrameLayout>
